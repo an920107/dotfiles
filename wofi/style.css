@@ -1,0 +1,44 @@
+window {
+    background-color: rgba(30, 30, 30, 0.9);
+    font-size: 20px;
+    font-family: 'Noto Sans CJK TC';
+    color: white;
+    border-radius: 10px;
+}
+
+#outer-box {
+    /*border: 6px solid #888888; /**/
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#entry {
+    padding: 0.3em 0.5em 0.3em 0.5em;
+}
+
+#text {
+    padding-left: 0.5em;
+}
+
+#entry:selected {
+    border-radius: 10px;
+    background: rgba(145, 165, 120, 0.9);
+}
+
+#text:selected {
+    color: rgba(40, 40, 40, 1);
+    font-weight: 700;
+}
+
+#input {
+    background-color: transparent;
+    color: white;
+    min-height: 60px;
+    font-weight: 700;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: 3px solid grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
