@@ -36,6 +36,18 @@ imap <C-s> <ESC><C-s>a
 map <C-w> :q<CR>
 imap <C-w> <ESC><C-w>
 
+" Ctrl+X 剪下整行
+map <C-x> dd
+imap <C-x> <ESC><C-x>a
+
+" Ctrl+C 複製整行
+map <C-c> yy
+imap <C-c> <ESC><C-c>a
+
+" Ctrl+V 貼上
+map <C-v> Pj
+imap <C-v> <ESC><C-v>a
+
 " Ctrl+L 切換行數顯示
 map <C-l> <ESC>:call ToggleLineNumber()<CR>
 imap <C-l> <ESC><C-l>a
