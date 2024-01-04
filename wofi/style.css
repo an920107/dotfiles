@@ -1,5 +1,5 @@
 window {
-    background-color: rgba(30, 30, 30, 0.9);
+    background-color: rgba(40, 40, 40, 0.9);
     font-size: 20px;
     font-family: 'Noto Sans CJK TC';
     color: white;
@@ -7,7 +7,7 @@ window {
 }
 
 #outer-box {
-    /*border: 6px solid #888888; /**/
+    border: 1px solid transparent;
     border-radius: 10px;
     padding: 10px;
 }
@@ -22,7 +22,7 @@ window {
 
 #entry:selected {
     border-radius: 10px;
-    background: rgba(145, 165, 120, 0.9);
+    background: rgba(179, 199, 255, 0.9);
 }
 
 #text:selected {
