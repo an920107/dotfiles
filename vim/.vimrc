@@ -1,14 +1,57 @@
+" Setup vim plug
+call plug#begin()
+Plug 'easymotion/vim-easymotion'
+Plug 'preservim/nerdtree'
+Plug 'preservim/tagbar'
+Plug 'junegunn/fzf.vim'
+Plug 'rking/ag.vim'
+Plug 'tpope/vim-commentary'
+call plug#end()
+
+" Set leader
+let mapleader=" "
+
+" Faster ESC
+imap jk <ESC>
+vmap jk <ESC>
+
+" Faster move
+nmap J 5j
+nmap K 5k
+
+" Faster save and quit
+nmap <Leader>w :w<CR>
+nmap <Leader>q :q<CR>
+nmap <Leader>x :x<CR>
+
+" Split window
+nmap <Leader>v :vsplit<CR>
+nmap <Leader>s :split<CR>
+nmap <Leader>j <C-w>j
+nmap <Leader>k <C-w>k
+nmap <Leader>h <C-w>h
+nmap <Leader>l <C-w>l
+nmap <Leader>J <C-w>J
+nmap <Leader>K <C-w>K
+nmap <Leader>H <C-w>H
+nmap <Leader>L <C-w>L
+
+
 " c: visual 模式啟用滑鼠
 " i: insert 模式啟用滑鼠
-set mouse=ci
+ set mouse=ci
 
 " 顯示行數
 set number
+set relativenumber
 set cursorline
 
 " Highlight 所有搜尋
 " `:noh` 可以關閉搜尋 highlight 直到下次搜尋
 set hlsearch
+
+" // 關閉搜尋 highlight
+nmap // :noh<CR>
 
 " 邊輸入邊搜尋
 set incsearch
@@ -28,34 +71,28 @@ set shiftwidth=4
 set cindent
 set smarttab
 
-" Ctrl+S 存檔
-map <C-s> :w<CR>
-imap <C-s> <ESC><C-s>a
-
-" Ctrl+W 離開
-map <C-w> :q<CR>
-imap <C-w> <ESC><C-w>
-
-" Ctrl+X 剪下整行
-map <C-x> dd
-imap <C-x> <ESC><C-x>a
-
-" Ctrl+C 複製整行
-map <C-c> yy
-imap <C-c> <ESC><C-c>a
-
-" Ctrl+V 貼上
-map <C-v> Pj
-imap <C-v> <ESC><C-v>a
-
-" Ctrl+L 切換行數顯示
-map <C-l> <ESC>:call ToggleLineNumber()<CR>
-imap <C-l> <ESC><C-l>a
+" <Leader>n 切換行數顯示
+nmap <Leader>n :call ToggleLineNumber()<CR>
 function ToggleLineNumber()
     if (&number == 0)
         set number
+        set relativenumber
     else
         set nonumber
+        set norelativenumber
     endif
 endfunction
+
+" NERDTree
+nmap <Leader>f :NERDTreeToggle<CR>
+
+" Tagbar
+nmap <Leader>t :TagbarToggle<CR>
+
+" FZF
+nmap <Leader>g :Files<CR>
+
+" Commentary
+nmap <Leader>/ gcc
+vmap <Leader>/ gc
 
