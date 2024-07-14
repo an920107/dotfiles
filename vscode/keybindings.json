@@ -2,13 +2,13 @@
 [
     // Editor switch
     {
-        "key": "ctrl-shift-k",
-        "command": "workbench.action.previousEditorInGroup",
+        "key": "ctrl-shift-j",
+        "command": "workbench.action.nextEditorInGroup",
         "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     {
-        "key": "ctrl-shift-j",
-        "command": "workbench.action.nextEditorInGroup",
+        "key": "ctrl-shift-k",
+        "command": "workbench.action.previousEditorInGroup",
         "when": "editorTextFocus && !editorReadonly && vim.active"
     },
     // Move lines up and down
@@ -22,6 +22,27 @@
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly && vim.active"
     },
+    // Select up and down
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
     // File management
     {
         "key": "ctrl+n",
@@ -34,14 +55,14 @@
         "when": "explorerViewletFocus"
     },
     {
-        "key": "ctrl+shift+e",
+        "key": "escape",
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "explorerViewletFocus"
     },
     // Terminal management
     {
         "key": "ctrl+shift+;",
-        "command": "workbench.action.togglePanel",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "ctrl+shift+n",
@@ -61,6 +82,21 @@
     {
         "key": "ctrl+shift+k",
         "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.positionPanelRight",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.positionPanelBottom",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.positionPanelLeft",
         "when": "terminalFocus"
     }
 ]
