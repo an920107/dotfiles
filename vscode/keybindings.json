@@ -1,0 +1,66 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Editor switch
+    {
+        "key": "ctrl-shift-k",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "editorTextFocus && !editorReadonly && vim.active"
+    },
+    {
+        "key": "ctrl-shift-j",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "editorTextFocus && !editorReadonly && vim.active"
+    },
+    // Move lines up and down
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly && vim.active"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly && vim.active"
+    },
+    // File management
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "explorerViewletFocus"
+    },
+    // Terminal management
+    {
+        "key": "ctrl+shift+;",
+        "command": "workbench.action.togglePanel",
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    }
+]
