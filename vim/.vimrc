@@ -14,7 +14,6 @@ let mapleader=" "
 
 " Faster ESC
 imap jk <ESC>
-vmap jk <ESC>
 
 " Faster move
 nmap J 5j
