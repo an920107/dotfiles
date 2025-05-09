@@ -3,6 +3,7 @@ local function setup()
 
   vim.keymap.set("n", "<Leader>t", ":ToggleTerm<CR>")
   vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+  vim.keymap.set("t", "jk", "<C-\\><C-n>")
 end
 
 return {

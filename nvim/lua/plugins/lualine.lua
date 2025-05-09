@@ -151,11 +151,11 @@ local function setup()
 
   -- Insert mid section. You can make any number of sections in neovim :)
   -- for lualine it's any number greater then 2
-  ins_left {
-    function()
-      return '%='
-    end,
-  }
+  -- ins_left {
+  --   function()
+  --     return '%='
+  --   end,
+  -- }
 
   ins_left {
     -- Lsp server name .

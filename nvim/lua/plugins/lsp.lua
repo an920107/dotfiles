@@ -10,6 +10,7 @@ local function mason_setup()
 			"lua_ls",
       "pyright",
 			"rust_analyzer",
+      "tailwindcss",
 			"ts_ls",
 		},
 	})
@@ -24,6 +25,7 @@ local function nvim_lsp_setup()
   vim.lsp.enable("lua_ls")
   vim.lsp.enable("pyright")
   vim.lsp.enable("rust_analyzer")
+  vim.lsp.enable("tailwindcss")
   vim.lsp.enable("ts_ls")
 
 	vim.keymap.set("n", "<Leader><Enter>", vim.lsp.buf.hover, {})
