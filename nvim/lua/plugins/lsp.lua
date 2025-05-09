@@ -3,6 +3,10 @@ local function mason_setup()
 		automatic_enable = true,
 		ensure_installed = {
 			"clangd",
+      "eslint",
+      "gradle_ls",
+      "html",
+      "kotlin_language_server",
 			"lua_ls",
       "pyright",
 			"rust_analyzer",
@@ -14,6 +18,9 @@ end
 local function nvim_lsp_setup()
   vim.lsp.enable("clangd")
   vim.lsp.enable("dartls")
+  vim.lsp.enable("gradle_ls")
+  vim.lsp.enable("html")
+  vim.lsp.enable("kotlin_language_server")
   vim.lsp.enable("lua_ls")
   vim.lsp.enable("pyright")
   vim.lsp.enable("rust_analyzer")

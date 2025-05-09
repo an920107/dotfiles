@@ -7,7 +7,6 @@ vim.keymap.set("n", "K", "5k")
 vim.keymap.set("n", "//", ":noh<CR>")
 vim.keymap.set("n", "<Leader>w", ":w<CR>")
 vim.keymap.set("n", "<Leader>q", ":q<CR>")
-vim.keymap.set("n", "<Leader>t", ":tabnew<CR>")
 
 vim.keymap.set("v", "J", "5j")
 vim.keymap.set("v", "K", "5k")

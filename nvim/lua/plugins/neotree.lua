@@ -1,8 +1,21 @@
 local function setup()
+  require("neo-tree").setup({
+    close_if_last_window = true,
+    -- popup_border_style = "winborder",
+    filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,
+      },
+      hide_by_name = {
+        ".git",
+        "node_modules",
+      },
+    },
+  })
+
   vim.keymap.set("n", "<Leader>j", ":Neotree filesystem reveal left<CR>")
   vim.keymap.set("n", "<Leader>b", ":Neotree buffers toggle bottom<CR>")
   vim.keymap.set("n", "<Leader>J", ":Neotree filesystem close left<CR>")
-  vim.keymap.set("n", "<Leader>q", ":Neotree filesystem close left<CR>:q<CR>")
 end
 
 return {
