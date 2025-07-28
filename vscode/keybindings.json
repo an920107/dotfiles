@@ -77,7 +77,7 @@
     },
     {
         "key": "escape",
-        "command": "workbench.action.toggleSidebarVisibility",
+        "command": "workbench.action.focusFirstEditorGroup",
         "when": "explorerViewletFocus"
     },
     // Terminal management
@@ -86,7 +86,7 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "ctrl+shift+n",
+        "key": "ctrl+shift+t",
         "command": "workbench.action.terminal.new",
         "when": "terminalFocus"
     },
@@ -96,12 +96,12 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+shift+j",
+        "key": "ctrl+tab",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+shift+k",
+        "key": "ctrl+shift+tab",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },

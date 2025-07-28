@@ -27,7 +27,6 @@
     "vim.hlsearch": true,
     "vim.easymotion": true,
     "vim.useSystemClipboard": true,
-    "vim.smartRelativeLine": true,
     "vim.statusBarColorControl": false,
     "vim.ignorecase": true,
     "vim.normalModeKeyBindings": [
@@ -56,6 +55,22 @@
             ],
             "commands": [
                 ":noh"
+            ]
+        },
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "commands": [
+                "redo"
             ]
         },
         {
@@ -190,7 +205,7 @@
                 "g"
             ],
             "commands": [
-                "workbench.action.quickOpen"
+                "workbench.action.showAllSymbols"
             ]
         },
         {
@@ -199,7 +214,16 @@
                 "f"
             ],
             "commands": [
-                "workbench.files.action.showActiveFileInExplorer"
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t"
+            ],
+            "commands": [
+                "breadcrumbs.focus"
             ]
         },
         {
@@ -211,33 +235,6 @@
                 "editor.action.showHover"
             ]
         },
-        {
-            "before": [
-                "<Leader>",
-                "<Enter>"
-            ],
-            "commands": [
-                "editor.action.revealDefinition"
-            ]
-        },
-        {
-            "before": [
-                "<Tab>"
-            ],
-            "after": [
-                ">",
-                ">"
-            ]
-        },
-        {
-            "before": [
-                "<S-Tab>"
-            ],
-            "after": [
-                "<",
-                "<"
-            ]
-        }
     ],
     "vim.insertModeKeyBindings": [
         {
@@ -248,9 +245,67 @@
             "after": [
                 "<Esc>"
             ]
-        }
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "<ESC>",
+                "j",
+                "a",
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "<ESC>",
+                "k",
+                "a",
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<ESC>",
+                "h",
+                "a",
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<ESC>",
+                "l",
+                "a",
+            ]
+        },
     ],
     "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "5",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "5",
+                "k"
+            ]
+        },
         {
             "before": [
                 "<Tab>"
@@ -276,5 +331,4 @@
                 "extension.vim_escape"
             ]
         }
-    ]
-}
+    ],
