@@ -498,11 +498,11 @@ theme = Catppuccin Mocha
 
 # Background color for the window.
 # Specified as either hex (`#RRGGBB` or `RRGGBB`) or a named X11 color.
-background = 
+# background = 
 
 # Foreground color for the window.
 # Specified as either hex (`#RRGGBB` or `RRGGBB`) or a named X11 color.
-foreground = 
+# foreground = 
 
 # Background image for the terminal.
 # 
@@ -1961,7 +1961,7 @@ window-subtitle = false
 # non-terminal windows within Ghostty.
 # 
 # This is currently only supported on macOS and Linux.
-window-theme = auto
+window-theme = ghostty
 
 # The color space to use when interpreting terminal colors. "Terminal colors"
 # refers to colors specified in your configuration and colors produced by
@@ -2926,7 +2926,7 @@ custom-shader-animation = true
 # Example: `audio`, `no-audio`, `system`, `no-system`
 # 
 # Available since: 1.2.0
-bell-features = no-system,no-audio,attention,title,no-border
+bell-features = system,audio,attention,title,border
 
 # If `audio` is an enabled bell feature, this is a path to an audio file. If
 # the path is not absolute, it is considered relative to the directory of the
@@ -3389,7 +3389,7 @@ gtk-single-instance = detect
 # 
 # This option does nothing when `window-decoration` is false or when running
 # under macOS.
-gtk-titlebar = true
+gtk-titlebar = false
 
 # Determines the side of the screen that the GTK tab bar will stick to.
 # Top, bottom, and hidden are supported. The default is top.
@@ -3405,7 +3405,7 @@ gtk-tabs-location = top
 # and shown when the titlebar is unmaximized. GTK only.
 # 
 # Available since: 1.1.0
-gtk-titlebar-hide-when-maximized = false
+gtk-titlebar-hide-when-maximized = true
 
 # Determines the appearance of the top and bottom bars tab bar.
 # 
